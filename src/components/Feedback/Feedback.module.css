@@ -1,0 +1,13 @@
+.list {
+  padding: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item {
+  font-size: larger;
+  text-align: start;
+  text-shadow: 1px 0px 1px rgb(201, 195, 195);
+}
