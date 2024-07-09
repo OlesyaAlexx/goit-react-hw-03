@@ -1,15 +1,24 @@
 //Імпортуємо файли з папки components та data в Арр.jsx
 
-import Description from "./components/Description/Description";
+import ContactForm from "./components/ContactForm/ContactForm";
 import "./App.css";
+import initialContacts from "../../data/contacts.json";
 import { useEffect, useState } from "react";
-import Options from "./components/Options/Options";
-import Feedback from "./components/Feedback/Feedback";
-import Notification from "./components/Notification/Notification";
+import SearchBox from "./components/SearchBox/SearchBox";
+import ContactList from "./components/ContactList/ContactList";
+import { Form, Formik } from "formik";
 
 // Створюємо головний компонент App
 
 const App = () => {
+  return (
+    <Formik initialValues={{ initialContacts }} onSubmit={() => {}}>
+      <Form></Form>
+    </Formik>
+  );
+};
+
+/* const App = () => {
   // Використовуємо useState для створення стану збережених відгуків
   // Початкове значення зчитується з  або дорівнює нулям
   const [feedback, setFeedback] = useState(() => {
@@ -69,3 +78,4 @@ const App = () => {
 };
 
 export default App;
+ */

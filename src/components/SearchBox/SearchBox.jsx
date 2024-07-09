@@ -1,4 +1,4 @@
-import styles from "./Feedback.module.css";
+/* import styles from "./Feedback.module.css";
 
 const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   return (
@@ -12,3 +12,4 @@ const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   );
 };
 export default Feedback;
+ */

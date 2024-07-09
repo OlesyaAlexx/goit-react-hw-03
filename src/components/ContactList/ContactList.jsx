@@ -1,4 +1,4 @@
-import styles from "./Notification.module.css";
+/* import styles from "./Notification.module.css";
 
 const Notification = () => {
   return (
@@ -9,3 +9,4 @@ const Notification = () => {
 };
 
 export default Notification;
+ */
