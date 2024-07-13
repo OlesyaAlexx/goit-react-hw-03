@@ -45,7 +45,7 @@ const App = () => {
 
   //Створюємо розмітку компонентів
   return (
-    <div className="wraper">
+    <div className="wrapper">
       <div className="contactBook">
         <h1 className="title">Phonebook</h1>
         <ContactForm addContact={addContact} />
