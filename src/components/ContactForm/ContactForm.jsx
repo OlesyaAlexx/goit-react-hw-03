@@ -26,7 +26,7 @@ const ContactForm = ({ addContact }) => {
       .max(50, "To Long!")
       .required("Required!"),
     number: Yup.string()
-      .matches(/^[0-9]+$/, "Must be only digits")
+      .matches(/^[0-9]+(-[0-9]+)*$/, "Invalid format")
       .min(3, "To Short!")
       .max(50, "To Long!")
       .required("Required!"),
