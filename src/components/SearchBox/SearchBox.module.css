@@ -1,14 +1,24 @@
-/* .list {
-  padding: 10px;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.searchText {
+  font-size: medium;
+  font-weight: bolder;
 }
 
-.item {
-  font-size: larger;
-  text-align: start;
-  text-shadow: 1px 0px 1px rgb(201, 195, 195);
+.inputSearch {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  flex-direction: column;
+  border-color: cadetblue;
+  transition: border-color 0.3s ease;
+
+  input:focus {
+    border-color: rgb(37, 94, 94);
+    outline: none;
+  }
+
+  span {
+    font-weight: bold;
+  }
 }
- */

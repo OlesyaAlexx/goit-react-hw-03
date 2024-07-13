@@ -5,3 +5,14 @@
   text-shadow: 1px 0px 1px rgb(201, 195, 195);
 }
  */
+
+ .list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}

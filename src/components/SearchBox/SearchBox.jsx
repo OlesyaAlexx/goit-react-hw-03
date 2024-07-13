@@ -1,15 +1,19 @@
-/* import styles from "./Feedback.module.css";
+import styles from "./SearchBox.module.css";
 
-const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
+//Функція для створення розмітки компонента
+//value це значення поля вводу, яке відображається у текстовому полі.
+//onSearch це функція-обробник, яка викликається при зміні значення у полі вводу.
+const SearchBox = ({ value, onSearch }) => {
   return (
-    <ul className={styles.list}>
-      <li className={styles.item}>Good: {feedback.good}</li>
-      <li className={styles.item}>Neutral: {feedback.neutral}</li>
-      <li className={styles.item}>Bad: {feedback.bad}</li>
-      <li className={styles.item}>Total: {totalFeedback}</li>
-      <li className={styles.item}>Positive: {positiveFeedback} %</li>
-    </ul>
+    <div>
+      <p className={styles.searchText}>Find contacts by name</p>
+      <input
+        className={styles.inputSearch}
+        type="text"
+        value={value}
+        onChange={(e) => onSearch(e.target.value)}
+      />
+    </div>
   );
 };
-export default Feedback;
- */
+export default SearchBox;
